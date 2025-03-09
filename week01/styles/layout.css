@@ -1,0 +1,68 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:medium;
+    padding: 2px;
+    color:black;
+    background-color: azure;
+    display: grid;
+}
+
+nav {
+    text-decoration: none;
+    display: flex;
+    grid-template-columns: 2fr;
+    gap: 30px;
+    padding: 5px;
+    text-align: center;
+    justify-content: space-around;
+    border:5px solid black;
+    margin:auto;
+}
+
+nav a{
+    display: flex;
+    text-decoration: none;
+}
+
+h1{
+    font-weight: bolder;
+    font-size: larger;
+    text-align: center;
+    font-style: italic;
+    
+}
+
+.container {
+    display: flex; /* Places main and aside side by side */
+    gap: 20px; /* Adds space between main and aside */
+    max-width: 900px; /* Optional: Controls width */
+    margin: auto; /* Centers the content */
+    padding: 20px;
+}
+main {
+    flex: 2; /* Makes main take more space */
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 5px;
+}
+aside {
+    flex: 1; /* Aside takes less space */
+    display: flex; /* Ensures the image aligns properly */
+    align-items: center; /* Centers image vertically */
+    justify-content: center; /* Centers image horizontally */
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 5px;
+}
+img {
+    width: 200px; /* Adjust image size */
+    height: auto;
+   
+}
+
+footer{
+    text-align: center;
+    padding:20px ;
+    background-color: brown;
+    margin:30px;
+}
