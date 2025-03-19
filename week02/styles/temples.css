@@ -1,0 +1,71 @@
+body{
+    background-color: azure;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    margin: auto;
+}
+header{
+    background-color: black;
+    color: white;
+}
+
+h1{
+    text-align:left;
+}
+
+.navbar{
+    display: flex;
+    padding: 10px;
+    gap:5px;
+    justify-content: space-around;
+    align-items: center;
+}
+.navbar .menu-link{
+    display:none;
+    flex-direction: column;
+    background: black;
+    width:100%;
+    text-align:left;
+    position: absolute;
+    top: 50px;
+    left: 0;
+}
+.navbar .menu-link a{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    display: block;
+}
+
+.menu-link.active{
+    display:flex;
+}
+
+.hambuger {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.main-column {
+    display: grid;
+    grid-template-columns: 1fr; /* Default: single column for mobile */
+    gap: 1rem;
+    padding: 10px;
+    justify-items: center;
+}
+
+/* Image Styling */
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    max-width: 300px;
+}
