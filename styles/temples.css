@@ -33,7 +33,7 @@ h1{
 .navbar .menu-link a{
     color: white;
     text-decoration: none;
-    padding: 5px;
+    padding: 10px;
     display: block;
 }
 .menu-link a:hover{
