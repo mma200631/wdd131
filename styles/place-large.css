@@ -1,4 +1,14 @@
-@media (min-width: 768px) {
+@media (max-width: 767px) {
+    .weather::before {
+      content: url('weather-icon.svg');
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+    }
+  }
+  
+  @media (min-width: 768px) {
     body {
       font-size: 1.2rem;
     }
@@ -9,28 +19,17 @@
       font-size: 1.4rem;
     }
   
-    .hero img {
-      max-height: 600px;
-      object-fit: cover;
+    .content {
+      top: 20%;
+      left: 10%;
     }
   
-    .data, .weather {
-      max-width: 80%;
-      margin: auto;
+    .weather {
+      bottom: 10%;
+      right: 10%;
     }
-
-    .data {
-        top: 25%;
-        left: 2%;
-      }
-    
-      .weather {
-        bottom: -30%;
-        right: 10%;
-      }
-    
-      .data, .weather {
-        padding: 2rem;
-      }
+  
+    .content, .weather {
+      padding: 2rem;
+    }
   } 
-  
