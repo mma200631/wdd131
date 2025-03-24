@@ -1,0 +1,36 @@
+@media (min-width: 768px) {
+    body {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    body {
+      font-size: 1.4rem;
+    }
+  
+    .hero img {
+      max-height: 600px;
+      object-fit: cover;
+    }
+  
+    .data, .weather {
+      max-width: 80%;
+      margin: auto;
+    }
+
+    .data {
+        top: 25%;
+        left: 2%;
+      }
+    
+      .weather {
+        bottom: -30%;
+        right: 10%;
+      }
+    
+      .data, .weather {
+        padding: 2rem;
+      }
+  } 
+  

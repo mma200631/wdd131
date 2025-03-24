@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width= device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="Assumpta Okpanachi">
+        <title>Country Page</title>
+        <link rel="stylesheet" href="styles/place.css">
+        <link rel="stylesheet" href="styles/place-large.css">
+        <script src="scripts/place.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Lagos, Nigeria</h1>
+        </header>
+        <main>
+            <section class="Hero">
+                <picture>
+                    <source srcset="images/lagoslarge.webp" media="(min-width:1200px)">
+                    <source srcset="images/lagosmedium.webp" media="(min-width:768px)">
+                    <img src="images/Lagos-Beachsmall.webp" alt="lagos beach">
+                </picture>
+            </section>
+            <section class="data">
+                <h2>Data</h2>
+                <p><strong>Area</strong>:1,171 km²</p>
+                <p><strong>Population</strong>:Approximately 15.4 million (2023 estimate)</p>
+                <p><strong>Capital</strong>:Ikeja</p>
+                <p><strong>Language</strong>:English (official), Yoruba (widely spoken)</p>
+                <p><strong>Currency</strong>:Naira(₦)</p>
+                <p><strong>Timing Zone</strong>:West Africa Time (WAT), UTC +1</p>
+                <p><strong>Calling Code</strong>:+234</p>
+            </section>
+
+            <section class="weather">
+                <h2>Weather<span class="weather-icon">⛅</span></h2>
+                <p><strong>Temperature</strong>:30°C</p>
+                <p><strong>Condition</strong>:Partly Cloudy</p>
+                <p><strong>Wind</strong>:15 km/h</p>
+                <p id="windchill"><strong>Wind Chill:</strong></p>
+
+
+            </section>     
+        </main>
+        <footer>
+            <p>&copy; <span id = "currentYear"></span> Okpanachi Assumpta Chidinma | Lagos, Nigeria</p>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
+
+</html>
