@@ -1,0 +1,33 @@
+body{
+    font-family:'Open Sans', sans-serif;
+    background-color: #F5F5DC;
+    color:#333;
+    margin:0px;
+    padding:3px;
+    text-align: center;
+}
+
+header{
+    background-color: #8B4513;
+    color:white;
+    padding: 10px;
+    font-family: 'Lora', serif;
+}
+
+h2,h3{
+    font-family:'Lora', serif;
+    color: #8B4513;
+}
+
+section{
+    background-color: white;
+    margin:15px auto;
+    padding: 15px;
+    border-radius: 8px;
+    max-width: 700px;
+}
+
+footer{
+    text-align: center;
+    font-size: 15px;
+}
