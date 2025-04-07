@@ -8,6 +8,10 @@
         <title>Product Review Form</title> 
         <link rel="stylesheet"  href="styles/form.css">
         <script src="scripts/form.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
     </head>
     <body>
         <header>
@@ -18,7 +22,7 @@
             <form method="get" action="review.html" class="wf">
                 <fieldset>
                     <label for="product">Product Name</label>
-                    <select id="product" name="product" requried>
+                    <select id="product" name="product">
                         <option value="" disabled selected>Select a product...</option>
                     </select>
                     <label>Overall Rating</label>
@@ -30,7 +34,7 @@
                         <input type="radio" id="star5" name="rating" value="5" required><label for="star5">&#9733;&#9733;&#9733;&#9733;&#9733;</label>
                     </div>
                     <label for="install-date">Installation Date</label>
-                    <input type="date" id="install-date" name="install-date" requried>
+                    <input type="date" id="install-date" name="install-date">
 
                     <label>Which of this features did you find useful?(check all that apply)</label>
                     <div class="check-box">
@@ -46,9 +50,13 @@
 
                     <input type="submit" value="Post Review">
                 </fieldset>
-                </form>
-                <footer>
-                    <p>&copy; <span id = "currentYear"></span> Okpanachi Assumpta Chidinma | Lagos, Nigeria</p>
-                    <p id="lastModified"></p>
-                </footer>
+            </form>
+        </main>
+        <footer>
+                <p>&copy; <span id = "currentYear"></span> Okpanachi Assumpta Chidinma | Lagos, Nigeria</p>
+                <p id="lastModified"></p>
+            </footer>
+            
+     </body>
+</html>
                     
