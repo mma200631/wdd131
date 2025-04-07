@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width= device-width, initial-scale=1.0">
+        <meta name="description" content="Share your thoughts and suggestions with us using our quick and easy feedback form. We value your input!">
+        <meta name="author" content="Okpanachi Assumpta">
+        <title>Product Review Form</title> 
+        <link rel="stylesheet"  href="styles/form.css">
+        <script src="scripts/form.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Product Review</h1>
+        </header>
+        <main>
+            
+            <form method="get" action="review.html" class="wf">
+                <fieldset>
+                    <label for="product">Product Name</label>
+                    <select id="product" name="product" requried>
+                        <option value="" disabled selected>Select a product...</option>
+                    </select>
+                    <label>Overall Rating</label>
+                    <div class="rating">
+                        <input type="radio" id="star1" name="rating" value="1" required><label for="star1">&#9733;</label>
+                        <input type="radio" id="star2" name="rating" value="2" required><label for="star2">&#9733; &#9733;</label>
+                        <input type="radio" id="star3" name="rating" value="3" required><label for="star3">&#9733;&#9733;&#9733;</label>
+                        <input type="radio" id="star4" name="rating" value="4" required><label for="star4">&#9733;&#9733;&#9733;&#9733;</label>
+                        <input type="radio" id="star5" name="rating" value="5" required><label for="star5">&#9733;&#9733;&#9733;&#9733;&#9733;</label>
+                    </div>
+                    <label for="install-date">Installation Date</label>
+                    <input type="date" id="install-date" name="install-date" requried>
+
+                    <label>Which of this features did you find useful?(check all that apply)</label>
+                    <div class="check-box">
+                        <label><input type="checkbox" id="feature1" name="features" value="Easy to use"> Easy to use</label>
+                        <label><input type="checkbox" id="feature2" name="features" value="Durability"> Durability</label>
+                        <label><input type="checkbox" id="feature3" name="features" value="Performance">Performance</label>
+                        <label><input type="checkbox" id="feature4" name="features" value="Design"> Design</label>
+                    </div>
+                    <label for="review">Written Review(optional)</label>
+                    <textarea id="review" name="review" rows="4" placeholder="Share your experience..."></textarea>
+                    <label for="username">Your Name(optional)</label>
+                    <input type="text" id="username" name="username">
+
+                    <input type="submit" value="Post Review">
+                </fieldset>
+                </form>
+                <footer>
+                    <p>&copy; <span id = "currentYear"></span> Okpanachi Assumpta Chidinma | Lagos, Nigeria</p>
+                    <p id="lastModified"></p>
+                </footer>
+                    
