@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Explore our delicious menu of coffee, tea, pastries, and breakfast options at Cozy Corner Café.">
+        <meta name="author" content="Okpanachi Assumpta">
+        <title>The menu page</title>
+        <link rel="stylesheet" href="styles/home.css">
+        <script src="scripts/home.js" defer></script>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <header>
+            <nav class="nav-link">
+                <a href="home.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="menu.html">Menu</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+        <main>
+            <section class="hero">
+                <h1>🥐 Cozy Coner Café Menu</h1>
+                <p>Where Every Cup Feels Like Home</p>
+                <p>Savour The Moment - One Cup At A Time</p>
+              </section>
+            <section class="menu-grid">
+                <div class="menu-card">
+                    <img src="images/menucoffeeimage.jpeg" alt="fresh-coffee" class="menu-img" loading="lazy">
+                    <h2>☕ Coffee</h2>
+                    <ul>
+                        <li>Americano</li>
+                        <li>Cappuccino</li>
+                        <li>Latte</li>
+                        <li>Mocha</li>
+                    </ul>
+                </div>
+
+                <div class="menu-card">
+                    <img src="images/tea.jpeg" alt="tea varieties" class="menu-img" loading="lazy">
+                    
+                    <h2>🍵 Tea & Drinks</h2>
+                    <ul>
+                        <li>Chai Latte</li>
+                        <li>Matcha</li>
+                        <li>Iced Tea</li>
+                        <li>Herbal Infusions</li>
+                    </ul>
+                </div>
+
+                <div class="menu-card">
+                    <img src="images/cruffins.webp" alt="fresh pastries" class="menu-img" loading="lazy">
+                    <h2>🥐 Pastries</h2>
+                    <ul>
+                        <li>Croissants</li>
+                        <li>Muffins</li>
+                        <li>Banana Bread</li>
+                        <li>Cinnamon Rolls</li>
+                    </ul>
+                </div>
+
+                <div class="menu-card">
+                    <img src="images/breakfast.jpeg" alt="Hearty Breakfast" class="menu-img" loading="lazy">
+                    <h2>🍳 Breakfast</h2>
+                    <ul>
+                      <li>Avocado Toast</li>
+                      <li>Bagel Sandwich</li>
+                      <li>Yogurt Bowl</li>
+                      <li>Scrambled Eggs</li>
+                    </ul>
+                </div>
+                
+                <div class="menu-card">
+                    <img src="images/pumpkin-spice-latte-1.jpeg" alt="A Pumpkin Spice Latte topped with whipped cream" class="menu-img" loading="lazy">
+                    <p><strong>Pumpkin Spice Latte</strong><br>A fall favorite, rich with spice and warmth.</p>
+                    <ul>
+                      <li>Available Hot or Iced</li>
+                      <li>Topped with whipped cream</li>
+                      <li>Spiced with cinnamon & nutmeg</li>
+                    </ul>
+                  </div>
+              
+                  <div class="menu-card">
+                    <img src="images/Cranberry-Walnut-Scone.jpeg" alt="A freshly baked Cranberry Walnut Scone" class="menu-img" loading="lazy">
+                    <p><strong>Cranberry Walnut Scone</strong><br>Tart, nutty, and golden-baked to perfection.</p>
+                    <ul>
+                      <li>Served warm</li>
+                      <li>Gluten-free option available</li>
+                      <li>Perfect with herbal tea</li>
+                    </ul>
+                  </div>
+              
+                  <div class="menu-card">
+                    <img src="images/iced-mint-mocha-latte.jpeg" alt="Mint Mocha" class="menu-img" loading="lazy">
+                    <p><strong>Mint Mocha</strong><br>A winter wonder in every cozy sip.</p>
+                    <ul>
+                      <li>Rich chocolate & mint flavor</li>
+                      <li>Optional soy or oat milk</li>
+                      <li>Barista favorite!</li>
+                    </ul>
+                  </div>
+
+                  <div class="menu-card">
+                    <img src="images/Gingerbread-Cookies.jpeg" alt="Gingerbread Cookie" class="menu-img">
+                    <p><strong>Gingerbread Cookie</strong><br>Sweet, spiced, and joyfully festive.</p>
+                    <ul>
+                      <li>Classic ginger & molasses blend</li>
+                      <li>Decorated with icing</li>
+                      <li>Perfect for dunking!</li>
+                    </ul>
+                  </div>
+              
+                
+            </section>
+            <section class="order-form">
+                <h2>📝 Place an Order or Give Feedback</h2>
+                <form method="get" action="order.html">
+                     <label for="fullname">FullName:</label>
+                     <input type="text" id="fullname" name="fullname" placeholder="Your Fullname" required>
+
+                     <label for="email">Email Address:</label>
+                     <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+
+                     <label for="order">What would you like to Order</label>
+                     <textarea id="order" name="order" rows="4" placeholder="E.g. 1 Latte, 2 Croissants..." required></textarea>
+
+                     <label for="pickup">Preferred pickup time:</label>
+                     <input type="time" id="pickup" name="pickup">
+
+                     <label for="feedback">Additional Feedback(Optional):</label>
+                     <textarea id="feedback" name="feedback" rows="3" placeholder="Tell us how were doing or what we can improve!"></textarea>
+
+                     <button type="submit">Place Order</button>
+                </form>   
+            </section>
+            <section id="order-history">
+                <h2>Your Order</h2>
+                <div id="ordersList"></div>
+            </section>
+            
+        </main>
+        <footer>
+            <p>&copy; <span id = "currentYear"></span> Cozy Café. All rights reserved.</p>
+        <p id="lastModified"></p>
+        </footer>
+    </body>
+
+</html>
